@@ -52,6 +52,9 @@ export default function Nosotros() {
                     Mis Redes : {nosotrosEze.redes} 
                 </div>
                 <div>
+                    Certificados:{nosotrosEze.certificado}
+                </div>
+                <div>
                     Contactame: {nosotrosEze.contacto}
                 </div>
             </div>
