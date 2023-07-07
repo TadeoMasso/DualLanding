@@ -6,13 +6,8 @@ import Navbar from "./components/NavBar/navbar"
 
 
 
-interface LayoutProps{
-  children: ReactNode
-}
 
-
-
-export default function RootLayout({children}: LayoutProps){
+export default function RootLayout({children}){
   return (
     <html>
       <head>
@@ -28,7 +23,7 @@ export default function RootLayout({children}: LayoutProps){
 
           </head>
           <body>
-            <Navbar/>
+
 
             
             <div>
