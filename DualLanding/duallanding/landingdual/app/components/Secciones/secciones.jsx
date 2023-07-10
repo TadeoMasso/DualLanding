@@ -1,15 +1,17 @@
+import Inicio from "../Secciones/contenidoSeccion/inicio"
+import Acerca from "../Secciones/contenidoSeccion/acercaDeNosotros"
 export default function Secciones() {
     return (
         <>
             <section id="inicio">
                 {/* Contenido de la sección "Inicio" */}
-                <h1>Inicio</h1>
+                <Inicio/>
                 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </section>
 
             <section id="acerca-de">
                 {/* Contenido de la sección "Acerca de"  */}
-                <h1>Acerca</h1>
+                <Acerca/>
                 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </section>
 
