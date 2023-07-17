@@ -1,5 +1,6 @@
 import Inicio from "../Secciones/contenidoSeccion/inicio"
 import Acerca from "../Secciones/contenidoSeccion/acercaDeNosotros"
+import Portfolio from "../Secciones/contenidoSeccion/Portfolio/portfolio"
 export default function Secciones() {
     return (
         <>
@@ -17,7 +18,7 @@ export default function Secciones() {
 
             <section id="portfolio">
                 {/* Contenido de la sección "Portfolio" */}
-                <h1>Portfolio</h1>
+                <Portfolio/>
                 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </section>
 
