@@ -36,11 +36,11 @@ const navigation = [
 export default function NavBar() {
   return (
     <>
-      <header className="bg-white shadow-lg h-24 hidden md:flex">
+      <header className="bg-black shadow-lg h-24 hidden md:flex relative">
         <a href="/" className="border flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8">
           <Image src="/svg/Logo.svg" alt="Logo" width={100} height={100} />
         </a>
-        <nav className="header-links contents font-semibold text-base lg:text-lg">
+        <nav className="absolute inset-y-0 left-0 header-links contents font-semibold text-base lg:text-lg">
           <ul className="flex items-center ml-4 xl:ml-8 mr-auto">
             {navigation.map((navigate) => (
               <li className="p-3 xl:p-6 active" key={navigate.label}>
