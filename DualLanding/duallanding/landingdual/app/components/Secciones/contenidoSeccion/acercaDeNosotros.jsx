@@ -32,9 +32,9 @@ export default function Nosotros() {
   return (
     <section >
       <div className="flex m-4 " >
-        <div className="flex flex-row border-dashed border-2 border-blue-500 rounded-md  ">
+        <div className="flex flex-row  rounded-md  ">
           <div className="w-1/3 flex flex-col items-center justify-center bg-blue-200 p-4 ">
-            <div className="w-32 h-32 mb-4">
+            <div className="w-32 h-80 mb-4">
               <Image src={nosotros[0].foto} alt="Mi foto" width={128} height={128} />
             </div>
             <h1 className="text-2xl font-bold">{nosotros[0].nombre}</h1>
@@ -45,7 +45,7 @@ export default function Nosotros() {
               <a href="mailto:TU_CORREO@gmail.com"><Image src="/svg/Google.svg" alt="Gmail" width={24} height={24} /></a>
             </div>
           </div>
-          <div className="w-2/3 flex items-center justify-center bg-gray-200 p-4 flex flex-col">
+          <div className="w-2/3  items-center justify-center bg-trasparent p-4 flex flex-col">
             <p className="text-center">
               {nosotros[0].texto}
             </p>
@@ -59,9 +59,9 @@ export default function Nosotros() {
         </div>
       </div>
       <div className="flex m-4 " >
-        <div className="flex flex-row-reverse border-dashed border-2 border-blue-500 rounded-md  ">
+        <div className="flex flex-row-reverse  rounded-md  ">
           <div className="w-1/3 flex flex-col items-center justify-center bg-blue-200 p-4 ">
-            <div className="w-32 h-32 mb-4">
+            <div className="w-32 h-80 mb-4">
               <Image src="/img/ejemploFoto.svg" alt="Mi foto" width={128} height={128} />
             </div>
             <h1 className="text-2xl font-bold">{nosotros[0].nombre}</h1>
@@ -72,7 +72,7 @@ export default function Nosotros() {
               <a href="mailto:TU_CORREO@gmail.com"><Image src="/svg/Google.svg" alt="Gmail" width={24} height={24} /></a>
             </div>
           </div>
-          <div className="w-2/3 flex items-center justify-center bg-gray-200 p-4 flex flex-col">
+          <div className="w-2/3 items-center justify-center bg-transparent p-4 flex flex-col">
             <p className="text-center">
               {nosotros[0].texto}
             </p>

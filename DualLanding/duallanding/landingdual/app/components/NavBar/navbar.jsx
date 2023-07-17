@@ -9,6 +9,7 @@ import {
 import { BellIcon, Cog6ToothIcon } from "@heroicons/react/24/solid";
 import 'tailwindcss/tailwind.css';
 import Image from "next/image";
+import { useState, useEffect } from 'react';
 
 const navigation = [
   {
@@ -34,9 +35,29 @@ const navigation = [
 ];
 
 export default function NavBar() {
+  const [navbarBackground, setNavbarBackground] = useState('black');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.pageYOffset;
+
+      if (offset > 0) {
+        setNavbarBackground('bg-black');
+      } else {
+        setNavbarBackground('bg-transparent');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <header className="bg-black shadow-lg h-24 hidden md:flex relative">
+      <header className={`bg-${navbarBackground} fixed top-0 left-0 right-0 z-50 flex`}>
         <a href="/" className="border flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8">
           <Image src="/svg/Logo.svg" alt="Logo" width={100} height={100} />
         </a>
