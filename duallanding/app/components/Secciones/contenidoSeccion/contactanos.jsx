@@ -12,7 +12,8 @@ function Contacto() {
     }
 
     return (
-        <section className="bg-black">
+        
+        <section className="bg-black mb-24">
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md border-double border-8 border-white rounded-lg bg-gray-950">
                 <div className="bg-gray-950">
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">Contactanos</h2>

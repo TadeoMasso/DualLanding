@@ -29,7 +29,6 @@ export default function Secciones() {
             <section id="contacto">
                 {/* Contenido de la sección "Contacto"  */}
                 <Contacto/>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </section>
         </>
     );

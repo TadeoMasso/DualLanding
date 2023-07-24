@@ -91,6 +91,7 @@ const Footer = () => {
           height: 100px;
           background: url("https://i.ibb.co/wQZVxxk/wave.png");
           background-size: 1000px 100px;
+          background-color: black;
         }
 
         .wave#wave1 {
