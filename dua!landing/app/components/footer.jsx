@@ -154,19 +154,16 @@ const Footer = () => {
         </ul>
         <ul className="menu">
           <li className="menu__item">
-            <a className="menu__link" href="#">Home</a>
+            <a className="menu__link" href="#inicio">Inico</a>
           </li>
           <li className="menu__item">
-            <a className="menu__link" href="#">About</a>
+            <a className="menu__link" href="#acerca-de">Acerca De</a>
           </li>
           <li className="menu__item">
-            <a className="menu__link" href="#">Services</a>
+            <a className="menu__link" href="#portfolio">Portfolio</a>
           </li>
           <li className="menu__item">
-            <a className="menu__link" href="#">Team</a>
-          </li>
-          <li className="menu__item">
-            <a className="menu__link" href="#">Contact</a>
+            <a className="menu__link" href="#contacto">Contacto</a>
           </li>
         </ul>
         <p>&copy;2023 Dua!Landing | All Rights Reserved</p>
