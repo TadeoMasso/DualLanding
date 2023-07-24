@@ -31,7 +31,8 @@ export default function Nosotros() {
 
   return (
     <section >
-      <div className="flex m-4 " >
+      <div className="flex m-4 h-screen
+       " >
         <div className="flex flex-row  rounded-md  ">
           <div className="w-1/3 flex flex-col items-center justify-center bg-blue-200 p-4 ">
             <div className="w-32 h-80 mb-4">
@@ -46,7 +47,7 @@ export default function Nosotros() {
             </div>
           </div>
           <div className="w-2/3  items-center justify-center bg-trasparent p-4 flex flex-col">
-            <p className="text-center">
+            <p className="text-center text-2xl">
               {nosotros[0].texto}
             </p>
             <div className="flex flex-row">
@@ -58,7 +59,7 @@ export default function Nosotros() {
           </div>
         </div>
       </div>
-      <div className="flex m-4 " >
+      <div className="flex m-4 h-screen " >
         <div className="flex flex-row-reverse  rounded-md  ">
           <div className="w-1/3 flex flex-col items-center justify-center bg-blue-200 p-4 ">
             <div className="w-32 h-80 mb-4">
@@ -73,7 +74,7 @@ export default function Nosotros() {
             </div>
           </div>
           <div className="w-2/3 items-center justify-center bg-transparent p-4 flex flex-col">
-            <p className="text-center">
+            <p className="text-center mr-3 ml-3">
               {nosotros[0].texto}
             </p>
             <div className="flex flex-row">
