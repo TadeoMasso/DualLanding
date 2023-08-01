@@ -27,16 +27,16 @@ const navigation = [
 ];
 
 export default function NavBar() {
-  const [navbarBackground, setNavbarBackground] = useState('bg-transparent');
+  const [navbarBackground, setNavbarBackground] = useState('bg-black');
 
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.pageYOffset;
 
       if (offset > 0) {
-        setNavbarBackground('bg-black');
-      } else {
         setNavbarBackground('bg-transparent');
+      } else {
+        setNavbarBackground('bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg');
       }
     };
 
@@ -48,7 +48,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <header className={`bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg fixed top-0 left-0 right-0 z-50 ${navbarBackground}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 ${navbarBackground}`}>
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <div>
           <a href="/" className="flex items-center justify-center">
@@ -68,4 +68,3 @@ export default function NavBar() {
     </header>
   );
 }
-

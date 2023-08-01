@@ -13,22 +13,21 @@ export default function Inicio() {
                     </div>
                 </div>
                 <div className="h-full p-4">
-                    <p className="text-sm mx-4 text-center text-white">¡Bienvenido a Dua!Landing!
+                    <p className="text-lg mx-4 text-center text-white">¡Bienvenido a Dua!Landing!
                         Somos Ezequiel Zungri y Tadeo Massó, dos apasionados desarrolladores web egresados de la academia virtual Soy Henry. Estamos emocionados de presentarte nuestros portfolios y mostrarte lo que podemos hacer.</p>
                 </div>
                 <br />
                 <br /><br /><br />
                 <br /><br /><br />
                 <div className="h-full p-4">
-                    <p className="text-sm mx-4 text-center text-white">
-                        <h2>
-
-                        Trabajando solo se llega rapido, pero trabajando en equipo se llega mas lejos.
+                    <div className="text-sm mx-4 text-center text-white">
+                        <h2 className='m-8'>
+                        "Vive como si fueras a morir mañana. Aprende como si fueras a vivir siempre."
                         </h2>
-                        <br />
-                        <br />
-                        mis huevos 2022
-                    </p>
+                        <p>
+                        Mahatma Gandhi
+                        </p>
+                    </div>
                 </div>
                 <br /><br /><br /><br /><br /><br />
 
