@@ -30,7 +30,7 @@ export default function Nosotros() {
 
 
   return (
-    <section >
+    <section  className="bg-gray-700">
       <div className="flex m-4 h-screen
        " >
         <div className="flex flex-row  rounded-md  ">

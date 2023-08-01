@@ -27,7 +27,7 @@ const navigation = [
 ];
 
 export default function NavBar() {
-  const [navbarBackground, setNavbarBackground] = useState('black');
+  const [navbarBackground, setNavbarBackground] = useState('bg-transparent');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,28 +48,24 @@ export default function NavBar() {
   }, []);
 
   return (
-    <>
-    <header className="bg-gray-300 bg-opacity-70 backdrop-filter backdrop-blur-lg fixed top-0 left-0 right-0 z-50 flex justify-center">
-      <div className="flex" >
-        <a href="/" className="border flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8">
-          <Image src="/svg/Logo.svg" alt="Logo" width={250} height={250} className='flex justify-start' />
-        </a>
+    <header className={`bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg fixed top-0 left-0 right-0 z-50 ${navbarBackground}`}>
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        <div>
+          <a href="/" className="flex items-center justify-center">
+            <Image src="/svg/Logo.svg" alt="Logo" width={250} height={250} />
+          </a>
         </div>
-        <div className="flex-grow flex justify-center">
-        <nav className="contents font-semibold text-base lg:text-lg">
-          <ul className="flex items-center ml-4 xl:ml-8">
+        <nav className="flex items-center ml-4 xl:ml-8">
+          <ul className="flex items-center">
             {navigation.map((navigate) => (
-              <li className="p-3 xl:p-6 active" key={navigate.label}>
-                <a href={navigate.route} className="no-underline text-blue-950">{navigate.label}</a>
+              <li className="p-3 xl:p-6" key={navigate.label}>
+                <a href={navigate.route} className="no-underline text-white">{navigate.label}</a>
               </li>
             ))}
           </ul>
         </nav>
       </div>
-    
-    
     </header>
-  </>
-  
   );
 }
+

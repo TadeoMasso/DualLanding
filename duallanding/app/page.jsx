@@ -7,7 +7,7 @@ import {ThemeProvider} from "@material-tailwind/react"
 
 export default function Home() {
   return (
-    <div>
+    <div className='bg-gray-700'>
       <ThemeProvider>
         <NavBar/>
        <Secciones/>
